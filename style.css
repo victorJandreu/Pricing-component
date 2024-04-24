@@ -82,11 +82,28 @@ main button{
 main section:not(.middle) button{
     background: linear-gradient(to right, var(--gradient));
     color: var(--very-light-grayish-blue);
+    border: 1px solid var(--very-light-grayish-blue);
+}
+
+main section:not(.middle) button:hover{
+    color: var(--dark-grayish-blue);
+    border: 1px solid var(--dark-grayish-blue);
+}
+
+main button:hover{
+ background: transparent !important;
 }
 
 .middle button{
     color: var(--grayish-blue);
     background-color: var(--very-light-grayish-blue);
+    border: 1px solid var(--very-light-grayish-blue);
+}
+
+.middle button:hover{
+    color: var(--very-light-grayish-blue);
+    border: 1px solid var(--very-light-grayish-blue);
+
 }
 
 main{
@@ -162,6 +179,9 @@ header button{
     border: none;
     position: relative;
     background: linear-gradient(to right, var(--gradient));
+}
+
+button{
     cursor: pointer;
 }
 
